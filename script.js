@@ -30,3 +30,43 @@ function calculateBMI() {
 	}
 }
 
+// for checking leap year
+
+
+const yearInput = document.getElementById('year');
+const CheckButton = document.getElementById('Check');
+
+
+CheckButton.addEventListener('click', isLeap);
+
+function isLeap() {
+	const year=parseInt(yearInput.value)
+    
+	    
+		
+		if(year%4===0 ){
+			if(year%100===0){
+				if(year%400===0){
+					alert('Leap year.');
+				}
+				else{
+					alert("Not leap year.");
+				}
+			}
+			else{
+				alert("Leap year.");
+			}
+					
+		}
+		else{
+			alert("Not leap year.");
+		}
+					
+			
+			   
+	
+	
+		
+	
+	
+}
