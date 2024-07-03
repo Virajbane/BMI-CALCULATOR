@@ -40,10 +40,7 @@ const CheckButton = document.getElementById('Check');
 CheckButton.addEventListener('click', isLeap);
 
 function isLeap() {
-	const year=parseInt(yearInput.value)
-    
-	    
-		
+	const year=parseInt(yearInput.value);		
 		if(year%4===0 ){
 			if(year%100===0){
 				if(year%400===0){
@@ -60,13 +57,5 @@ function isLeap() {
 		}
 		else{
 			alert("Not leap year.");
-		}
-					
-			
-			   
-	
-	
-		
-	
-	
+		}	
 }
